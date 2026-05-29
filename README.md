@@ -28,6 +28,7 @@ The journal *Evolution: Education and Outreach* (EEO) is the primary venue for s
 ```
 ├── Scraper.ipynb          # Web scraper — collects raw article data
 ├── Cleaning.ipynb         # Data cleaning pipeline
+├── Analysis.ipynb         # EDA + BERTopic thematic clustering
 ├── EEO_articles.csv       # Raw scraped dataset
 ├── requirements.txt       # Python dependencies
 └── .gitignore
@@ -65,12 +66,21 @@ Parses the raw CSV into analysis-ready form:
 - Makes `Article link` an absolute URL
 - Outputs `EEO_articles_clean.csv`
 
+### 3. Analysis (`Analysis.ipynb`)
+
+Exploratory data analysis followed by unsupervised thematic clustering:
+
+- Publication volume by year, content type breakdown, most prolific authors
+- Sentence-transformer embeddings (titles) + BERTopic clustering
+- Interactive topic keyword chart, 2-D topic map, and topics-over-time visualization
+
 ## Built With
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-orange?style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4-green?style=for-the-badge)](https://www.crummy.com/software/BeautifulSoup/)
+[![BERTopic](https://img.shields.io/badge/BERTopic-topic%20modelling-blueviolet?style=for-the-badge)](https://maartengr.github.io/BERTopic/)
 
 ## Author
 

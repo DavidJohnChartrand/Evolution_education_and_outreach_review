@@ -1,4 +1,16 @@
+# Scraping
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
-pandas>=2.0.0
 splinter>=0.21.0
+
+# Data
+pandas>=2.0.0
+
+# Analysis
+bertopic>=0.16.0
+hdbscan>=0.8.33
+matplotlib>=3.7.0
+plotly>=5.0.0
+seaborn>=0.12.0
+sentence-transformers>=2.2.0
+umap-learn>=0.5.0
